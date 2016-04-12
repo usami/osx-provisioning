@@ -1,7 +1,11 @@
 ---
+taps:
+  - caskroom/cask
+  - neovim/neovim
 
 packages:
   - ansible
+  - brew-cask
   - elixir
   - fish
   - git
@@ -14,4 +18,3 @@ packages:
   - tree
   - watch
   - z
-
