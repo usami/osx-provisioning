@@ -1,0 +1,17 @@
+---
+
+packages:
+  - ansible
+  - elixir
+  - fish
+  - git
+  - heroku-toolbelt
+  - htop-osx
+  - jq
+  - keybase
+  - neovim
+  - tmux
+  - tree
+  - watch
+  - z
+
