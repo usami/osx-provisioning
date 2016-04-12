@@ -1,0 +1,9 @@
+---
+- name: os x playbook
+  hosts: local
+  roles:
+    - brew
+    - cask
+    # - system
+    # - fonts
+    # - keys
