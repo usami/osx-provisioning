@@ -9,6 +9,7 @@ packages:
   - elixir
   - fish
   - git
+  - gnupg
   - heroku-toolbelt
   - htop-osx
   - jq
