@@ -1,0 +1,6 @@
+---
+
+- name: ensure ruby versions are installed
+  shell: rbenv install -s {{ item }}
+  with_items: "{{ ruby_versions }}"
+

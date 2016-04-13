@@ -4,6 +4,7 @@
   roles:
     - { role: brew, tags: ['brew'] }
     - { role: cask, tags: ['cask'] }
+    - { role: lang, tags: ['lang'] }
     # - system
     # - fonts
     # - keys
