@@ -1,0 +1,13 @@
+---
+
+- name: check packages are installed
+  shell: brew cask list | grep "^{{ item }}$"
+  register: installed_packages
+  with_items: "{{ packages }}"
+  ignore_errors: true
+
+- name: ensure packages are installed
+  homebrew_cask: name={{ item }}
+  with_items: "{{ packages }}"
+  when: item not in installed_packages.results | map(attribute='stdout')
+
