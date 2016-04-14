@@ -1,0 +1,9 @@
+---
+
+- name: ensure powerline fonts repo is cloned
+  git:
+    repo=https://github.com/powerline/fonts.git
+    dest=~/src/powerline/fonts
+
+- name: ensure powerline fonts are installed
+  command: cd ~/src/powerline/fonts && ./install

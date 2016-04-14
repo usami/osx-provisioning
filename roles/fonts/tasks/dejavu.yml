@@ -1,0 +1,14 @@
+---
+
+- name: ensure dejavu fonts tarball is donwloaded
+  get_url:
+    url={{ dejavu.url }}
+    dest={{ dejavu.tar }}
+    checksum={{ dejavu.checksum }}
+    timeout=20
+  register: downloaded_tarball
+
+- name: ensure dejavu fonts are installed
+  unarchive:
+    src={{ dejavu.tar }}
+    dest=~/Library/Fonts/
