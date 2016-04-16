@@ -6,5 +6,5 @@
     - { role: cask, tags: ['cask'] }
     - { role: lang, tags: ['lang'] }
     - { role: fonts, tags: ['fonts'] }
-    # - system
+    - { role: system, tags: ['system'] }
     # - files

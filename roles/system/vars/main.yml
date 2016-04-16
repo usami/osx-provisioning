@@ -1,0 +1,152 @@
+---
+
+global:
+  domain: NSGlobalDomain
+  configs:
+
+    - key: NSAutomaticWindowAnimationsEnabled
+      type: bool
+      value: false
+
+    - key: NSWindowResizeTime
+      type: float
+      value: 0.001
+
+    - key: KeyRepeat
+      type: int
+      value: 0
+
+    - key: InitialKeyRepeat
+      type: int
+      value: 12
+
+    - key: NSTableViewDefaultSizeMode
+      type: int
+      value: 2
+
+    - key: NSNavPanelExpandedStateForSaveMode
+      type: bool
+      value: true
+
+    - key: NSNavPanelExpandedStateForSaveMode2
+      type: bool
+      value: true
+
+    - key: QLPanelAnimationDuration
+      type: float
+      value: 0
+
+    - key: AppleLanguages
+      type: array
+      value: ["en", "ja"]
+
+trackpad:
+  configs:
+
+    - domain: com.apple.AppleMultitouchTrackpad
+      key: TrackpadRightClick
+      type: bool
+      value: true
+
+    - domain: com.apple.AppleMultitouchTrackpad
+      key: ActuationStrength
+      type: int
+      value: 1
+
+    - domain: com.apple.AppleMultitouchTrackpad
+      key: FirstClickThreshold
+      type: int
+      value: 0
+
+    - domain: com.apple.AppleMultitouchTrackpad
+      key: SecondClickThreshold
+      type: int
+      value: 0
+
+    - domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+      key: TrackpadRightClick
+      type: bool
+      value: true
+
+    - domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+      key: ActuationStrength
+      type: bool
+      value: true
+
+    - domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+      key: FirstClickThreshold
+      type: int
+      value: 0
+
+    - domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+      key: SecondClickThreshold
+      type: int
+      value: 0
+
+dock:
+  domain: com.apple.dock
+  configs:
+
+    - key: magnification
+      type: bool
+      value: false
+
+    - key: launchanim
+      type: bool
+      value: false
+
+    - key: expose-animation-duration
+      type: float
+      value: 0.1
+
+    - key: autohide
+      type: bool
+      value: true
+
+    - key: autohide-delay
+      type: float
+      value: 0
+
+    - key: tilesize
+      type: float
+      value: 50
+
+finder:
+  domain: com.apple.finder
+  configs:
+
+    - key: AppleShowAllFiles
+      type: bool
+      value: true
+
+    - key: QLEnableTextSelection
+      type: bool
+      value: true
+
+other:
+  - domain: com.apple.ImageCapture
+    key: disableHotPlug
+    type: bool
+    value: true
+
+string:
+  - domain: NSGlobalDomain
+    key: AppleMeasurementUnits
+    value: Centimeters
+
+  - domain: com.apple.dock
+    key: orientation
+    value: bottom
+
+  - domain: com.apple.dock
+    key: mineffect
+    value: scale
+
+  - domain: com.apple.dock
+    key: persistent-apps
+    value: <array/>
+
+  - domain: com.apple.screencapture
+    key: location
+    value: ~/Pictures
+

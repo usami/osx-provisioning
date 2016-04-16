@@ -1,0 +1,51 @@
+---
+
+- name: global system settings
+  osx_defaults:
+    domain: "{{ global.domain }}"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items: "{{ global.configs }}"
+
+- name: trackpad settings
+  osx_defaults:
+    domain: "{{ item.domain }}"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items: "{{ trackpad.configs }}"
+
+- name: dock settings
+  osx_defaults:
+    domain: "{{ dock.domain }}"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items: "{{ dock.configs }}"
+
+- name: finder settings
+  osx_defaults:
+    domain: "{{ finder.domain }}"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items: "{{ finder.configs }}"
+
+- name: other misc settings
+  osx_defaults:
+    domain: "{{ item.domain }}"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items: "{{ other }}"
+
+- name: string type settings
+  command: defaults write {{ item.domain }} {{ item.key }} -string {{ item.value }}
+  with_items: "{{ string }}"
+
+- name: restart dock
+  command: killall Dock
+
+- name: restart finder
+  command: killall Finder
