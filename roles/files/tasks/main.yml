@@ -1,0 +1,4 @@
+---
+
+- name: ensure symlink to dotconfig
+  file: src=~/Dropbox/dotconfig dest=~/.config state=link
