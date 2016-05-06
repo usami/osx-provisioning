@@ -18,7 +18,7 @@ global:
 
     - key: InitialKeyRepeat
       type: int
-      value: 12
+      value: 13
 
     - key: NSTableViewDefaultSizeMode
       type: int
@@ -117,7 +117,7 @@ finder:
 
     - key: AppleShowAllFiles
       type: bool
-      value: true
+      value: false
 
     - key: QLEnableTextSelection
       type: bool
