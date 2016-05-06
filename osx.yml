@@ -7,4 +7,5 @@
     - { role: lang, tags: ['lang'] }
     - { role: fonts, tags: ['fonts'] }
     - { role: system, tags: ['system'] }
+    - { role: shell, tags: ['shell'] }
     # - files

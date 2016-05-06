@@ -1,0 +1,4 @@
+---
+
+- name: ensure fish as login shell
+  command: /usr/bin/chsh -s /usr/local/bin/fish
